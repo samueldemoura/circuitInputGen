@@ -92,10 +92,10 @@ int main()
                     result = input[i][0] ^ input[i][1];
                     break;
                 case 3: // a NAND b
-                    result = !(input[i][0] & input[i][1]);
+                    result = ~(input[i][0] & input[i][1]);
                     break;
                 case 4: // a NOR b
-                    result = !(input[i][0] | input[i][1]);
+                    result = ~(input[i][0] | input[i][1]);
                     break;
                 default:
                     break;
